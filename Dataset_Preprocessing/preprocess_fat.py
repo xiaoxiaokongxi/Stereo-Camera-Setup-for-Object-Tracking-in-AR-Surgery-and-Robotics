@@ -40,7 +40,7 @@ if divide_rgb_and_mask_and_json == True:
             #for left in name copy to left .png, check end with jpg and rename to .png
             if 'left.jpg' in img:
                 left_source = os.path.join(path,img)
-                left_folder = os.path.join(new_scene_path, "left") # /fat/002/left/
+                left_folder = os.path.join(new_scene_path, "data") # /fat/002/data/
                 if os.path.exists(left_folder) == False:
                     os.makedirs(left_folder)
                 left_rgb = os.path.join(left_folder, "rgb") # /fat/002/left/rgb
@@ -67,7 +67,7 @@ if divide_rgb_and_mask_and_json == True:
 
             elif "left.seg.png" in img:
                 left_source = os.path.join(path,img)
-                left_folder = os.path.join(new_scene_path, "left") # /fat/002/left/
+                left_folder = os.path.join(new_scene_path, "data") # /fat/002/data/
                 if os.path.exists(left_folder) == False:
                     os.makedirs(left_folder)
                 left_seg = os.path.join(left_folder, "mask") # /fat/002/left/mask
@@ -94,7 +94,7 @@ if divide_rgb_and_mask_and_json == True:
             #first put json in one path
             elif "left.json" in img:
                 left_source = os.path.join(path,img)
-                left_folder = os.path.join(new_scene_path, "left") # /fat/002/left/
+                left_folder = os.path.join(new_scene_path, "data") # /fat/002/data/
                 if os.path.exists(left_folder) == False:
                     os.makedirs(left_folder)
                 left_json = os.path.join(left_folder, "json") # /fat/002/left/json
@@ -121,7 +121,7 @@ if divide_rgb_and_mask_and_json == True:
             #first put depth in one path
             elif "left.depth" in img:
                 left_source = os.path.join(path,img)
-                left_folder = os.path.join(new_scene_path, "left") # /fat/002/left/
+                left_folder = os.path.join(new_scene_path, "data") # /fat/002/data/
                 if os.path.exists(left_folder) == False:
                     os.makedirs(left_folder)
                 left_depth = os.path.join(left_folder, "depth") # /fat/002/left/depth
