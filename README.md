@@ -75,5 +75,8 @@ python debug.py --phi 0 --annotations linemod /dataPAM --object-id 35
  you can display the loaded and augmented image as well as annotations prepared for a phi = 0 model from object 35 of the Linemod dataset.
 Please see ```debug.py``` for more arguments.
 
+## Original EfficientPose
+You can get the original [EfficientPose](https://arxiv.org/abs/2011.04307), and try our Mono.h5 pretained weights for our dataset and compare the result.
+
 ## Stereo EfficientPose
-If you want to try the direct concatenated EfficientPose network, see ```train.py``` and uncomment the "build_Direct_Concate_EfficientPose" function.
+If you want to try the direct concatenated EfficientPose network, see ```train.py``` and uncomment the "build_Direct_Concate_EfficientPose" function, and use the corresponding pretrained weight we provide.
