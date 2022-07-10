@@ -42,8 +42,8 @@ Dataset
 ## Installation of PAM EfficientPose
 
 1) Clone this repository
-2) Create a new environment with ```conda create -n EfficientPose python==3.7```
-3) Activate that environment with ```conda activate EfficientPose```
+2) Create a new environment with ```conda create -n PAMEP python==3.7```
+3) Activate that environment with ```conda activate PAMEP```
 4) Install Tensorflow 1.15.0 with ```conda install tensorflow-gpu==1.15.0```
 5) Go to the PAM_EfficientPose dir and install the other dependencys using ```pip install -r requirements.txt```(if you are using colab, you need ```!pip install gast==0.2.2``` to avoid warnings)
 6) Compile cython modules with ```python setup.py build_ext --inplace```
